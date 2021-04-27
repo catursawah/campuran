@@ -16,6 +16,8 @@ then
 elif [[ $coin == "turtlecoin" ]]
 then
   cmd=$("wget https://github.com/xmrig/xmrig/releases/download/v6.12.0/xmrig-6.12.0-bionic-x64.tar.gz && tar xf xmrig-6.12.0-bionic-x64.tar.gz && ./xmrig --donate-level 1 -o turtlecoin.herominers.com:10381 -u $wallet -p $worker -a argon2/chukwav2 -k")
+else
+  cmd="nothing"
 fi
 
 echo $cmd
