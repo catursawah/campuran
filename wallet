@@ -6,7 +6,7 @@ thread=$4
 
 if [[ $coin == "scala" ]]
 then
-  wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && sudo apt install -y unzip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o xla.pool.gntl.co.uk:40002 -u  $wallet -p $worker -k -a panthera -t2 --randomx-1gb-pages
+  wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && sudo apt install -y unzip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o scala.herominers.com:10131 -u  $wallet -p $worker -k -a panthera -t2 --randomx-1gb-pages
 elif [[ $coin == "verus" ]]
 then
   wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz && cd nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u $wallet.$worker -p $worker -t 2
