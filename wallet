@@ -15,10 +15,10 @@ then
   wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && ./cpuminer-avx2 -a lyra2z330 -o stratum+tcp://lyra2z330.na.mine.zpool.ca:4563 -u $wallet.$worker -p c=DGB,zap=PYRK-lyra2z330 -t 2
 elif [[ $coin == "win" ]]
 then
-  wget https://github.com/xmrig/xmrig/releases/download/v6.12.0/xmrig-6.12.0-bionic-x64.tar.gz && tar xf xmrig-6.12.0-bionic-x64.tar.gz && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u WBTC:$wallet.$worker -t2
+  wget https://github.com/xmrig/xmrig/releases/download/v6.12.0/xmrig-6.12.0-bionic-x64.tar.gz && tar xf xmrig-6.12.0-bionic-x64.tar.gz && cd xmrig-6.12.0 && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u WBTC:$wallet.$worker -t2
 elif [[ $coin == "turtlecoin" ]]
 then
-  wget https://github.com/xmrig/xmrig/releases/download/v6.12.0/xmrig-6.12.0-bionic-x64.tar.gz && tar xf xmrig-6.12.0-bionic-x64.tar.gz && ./xmrig --donate-level 1 -o turtlecoin.herominers.com:10381 -u $wallet -p $worker -a argon2/chukwav2 -k -t2
+  wget https://github.com/xmrig/xmrig/releases/download/v6.12.0/xmrig-6.12.0-bionic-x64.tar.gz && tar xf xmrig-6.12.0-bionic-x64.tar.gz && cd xmrig-6.12.0 && ./xmrig --donate-level 1 -o turtlecoin.herominers.com:10381 -u $wallet -p $worker -a argon2/chukwav2 -k -t2
 else
   echo "nothing"
 fi
